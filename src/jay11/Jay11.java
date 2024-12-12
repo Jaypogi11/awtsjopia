@@ -3,7 +3,7 @@ package jay11;
 
 import java.util.Scanner;
  import java.util.InputMismatchException;
-import static jay11.order.or;
+
 
     
 public class Jay11 {
@@ -12,7 +12,7 @@ public class Jay11 {
 
         boolean exit = true;
         do {
-            System.out.println("\n---------------------------");
+            System.out.println("\n---------------------------------------------");
             System.out.println("Welcome to Coffee Shop:");
             System.out.println("");
             System.out.println("1. Customer:");
@@ -20,6 +20,7 @@ public class Jay11 {
             System.out.println("3. Order:");
             System.out.println("4. Report:");
             System.out.println("5. Exit:");
+            System.out.println("\n---------------------------------------------");
             
             int act = 0;
 
@@ -56,6 +57,8 @@ public class Jay11 {
                    
                     break;
                 case 4:
+                    Reports rt = new Reports();
+                    rt.generateReport();
                  
                     break;
                 case 5:

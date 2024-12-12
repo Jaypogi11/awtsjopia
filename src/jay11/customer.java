@@ -132,7 +132,7 @@ public class customer {
     }
 
   
-    public void viewcustomer() {
+    public static void viewcustomer() {
         String qry = "SELECT * FROM tbl_customer";
         String[] headers = {"c_id", "c_name", "c_contact", "c_address"};
         String[] columns = {"c_id", "c_name", "c_contact", "c_address"};

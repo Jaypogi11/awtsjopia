@@ -133,7 +133,7 @@ public class product {
     }
 
     // Method to view all products
-    public void viewproduct() {
+    public static void viewproduct() {
         String qry = "SELECT * FROM tbl_product";
         String[] headers = {"p_id", "p_name", "p_price", "p_stock"};
         String[] columns = {"p_id", "p_name", "p_price", "p_stock"};
